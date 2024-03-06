@@ -69,19 +69,36 @@ img{
     color: #ea3f3f;
 }
 
+#hamburgerBtn{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 768px){
     body{
         margin-left: 0;
     }
     #sidebar {
-        width: 100%;
+        width: 100vh;
+        transform: translateX(-2000px);
     }
     #sidebar img{
         width: 180px;
         height: auto;
     }
+    #sidebar.showMenu{
+        transform: translateX(0);
+    }
+
     .menu{
         text-align: center;
     }
+    #hamburgerBtn{
+        display: inline-block;
+    }
+    
 }
