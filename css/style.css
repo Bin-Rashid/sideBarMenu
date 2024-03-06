@@ -1,0 +1,87 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    margin-left: 220px;
+    background: #F7F4C1;
+}
+img{
+    max-width: 100%;
+}
+
+#sidebar{
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0D251C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+#sidebar .identity {
+    text-align: center;
+}
+
+#sidebar .identity h5 strong{
+    color: #ea3f3f;
+}
+#sidebar .identity h5{
+    color: #F7F4C1;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+#sidebar .identity h5 strong{
+    color: #ea3f3f;
+}
+#sidebar .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#sidebar .menu li{ 
+    list-style: none;
+}
+#sidebar .menu li a{ 
+    text-decoration: none;
+    color: #F7F4C1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+
+#sidebar #sidebarFooter p{
+    color: #F7F4C1;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+#sidebar #sidebarFooter p strong{
+    color: #ea3f3f;
+}
+
+
+@media only screen and (max-width: 768px){
+    body{
+        margin-left: 0;
+    }
+    #sidebar {
+        width: 100%;
+    }
+    #sidebar img{
+        width: 180px;
+        height: auto;
+    }
+    .menu{
+        text-align: center;
+    }
+}
