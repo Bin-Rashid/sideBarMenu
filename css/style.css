@@ -85,6 +85,7 @@ img{
     #sidebar {
         width: 100vh;
         transform: translateX(-2000px);
+        transition: transform 1000ms;
     }
     #sidebar img{
         width: 180px;
